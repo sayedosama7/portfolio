@@ -1,0 +1,496 @@
+/* start global  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+:root {
+    --main-bg: #040b14;
+    --main-border: #2c2f3f;
+    --main-hover: #54b4d3;
+    --main-trasition: all .5s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-title h2 {
+    color: #173b6c;
+    border-bottom: 3px solid var(--main-hover);
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+/* End global  */
+
+/* start header  */
+.header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-bg);
+    z-index: 9999999;
+}
+
+.fa-bars {
+    color: var(--main-hover);
+    padding: 10px;
+    border: 2px solid var(--main-hover);
+}
+
+.header img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    display: block;
+    border: 10px solid var(--main-border);
+    transition: all .5s ease;
+    transform: scale(.9);
+}
+
+.header img:hover {
+    transform: scale(1);
+    filter: brightness(.8);
+    border: 10px solid var(--main-hover);
+}
+
+.header h4 {
+    letter-spacing: 1px;
+}
+
+.header-social a {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #2c2f3f;
+    padding: 10px 15px;
+    transition: all .5s ease;
+}
+
+.nav-link:hover .fa-user,
+.nav-link:hover .fa-file,
+.nav-link:hover .fa-readme,
+.nav-link:hover .fa-server {
+    color: var(--main-hover);
+}
+
+.header-social a:hover {
+    background-color: var(--main-hover);
+}
+
+@media (max-width:992px) {
+    .navbar {
+        box-shadow: none;
+    }
+
+    .header-photo {
+        display: none;
+    }
+
+    .header {
+        background-color: transparent;
+    }
+
+    .header {
+        position: absolute;
+    }
+}
+
+@media (min-width:992px) and (max-width:1250px) {
+    .header-social a {
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    .header {
+        background-color: transparent;
+    }
+}
+
+/* End header  */
+
+/* start main  */
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.925)), url(../images/FB_IMG_1523605849425.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-left: 7%;
+}
+
+.main h1 {
+    padding-top: 40%;
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+.main h4 {
+    letter-spacing: 5px;
+}
+
+@media (max-width:350px) {
+    .main h1 {
+        padding-top: 25%;
+        padding-left: 50%;
+        font-size: 18px;
+    }
+
+    .main h4 {
+        padding-left: 50%;
+        font-size: 14px;
+    }
+
+    .main {
+        height: auto;
+        padding-bottom: 100px;
+    }
+}
+
+@media(min-width:350px) and (max-width:576px) {
+    .main h1 {
+        padding-top: 20%;
+        padding-left: 50%;
+        font-size: 25px;
+    }
+
+    .main h4 {
+        padding-left: 50%;
+    }
+
+    .main {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .main h1 {
+        padding-top: 30%;
+        padding-left: 30%;
+    }
+
+    .main h4 {
+        padding-left: 30%;
+    }
+}
+
+/* End main  */
+
+/* start about  */
+.about {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.about img {
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.about .info h5 {
+    margin-right: 10px;
+    font-weight: 600;
+    color: black;
+}
+
+@media (max-width:576px) {
+    .email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .about-all {
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info div {
+        display: flex;
+    }
+
+    .about .info h5,
+    .about h2 {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .info div {
+        display: flex;
+    }
+}
+
+/* End about  */
+/* start skills  */
+.skills {
+    padding: 50px 15px;
+    background-color: #f5f8fd;
+}
+
+.skills .box {
+    width: 100%;
+    background-color: #c2d6f1;
+    height: 10px;
+}
+
+.skills .box h5 {
+    background-color: #54b4d3;
+    height: 10px;
+}
+
+.skills h6 {
+    font-weight: 900;
+}
+
+@media (max-width:768px) {
+    .skills-measure {
+        flex-direction: column;
+    }
+
+    .skills {
+        padding: 10px;
+    }
+}
+
+/* End skills  */
+
+/* start resume  */
+.resume {
+    background-color: #fff;
+    padding: 50px 15px;
+}
+
+.resume h6 {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.resume h6::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    top: 7px;
+    left: -15px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    position: relative;
+    margin-left: 20px;
+}
+
+.sidebar::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: -27px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--main-hover);
+}
+
+.sidebar::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 240px;
+    max-height: fit-content;
+    top: 20px;
+    left: -18px;
+    background-color: var(--main-hover);
+}
+
+.sidebar-experience {
+    position: relative;
+    margin-left: 20px;
+}
+
+.sidebar-experience::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: -27px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--main-hover);
+}
+
+.sidebar-experience::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 320px;
+    top: 20px;
+    left: -18px;
+    background-color: var(--main-hover);
+}
+
+.master {
+    position: relative;
+    margin-left: -10px;
+}
+
+.master::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -17px;
+    left: -35px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--main-hover);
+}
+
+.master::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 270px;
+    top: 1px;
+    left: -26px;
+    background-color: var(--main-hover);
+}
+
+@media (max-width:1200px) {
+
+    .master::before,
+    .sidebar-experience::before,
+    .sidebar::before,
+    .master::after,
+    .sidebar-experience::after,
+    .sidebar::after {
+        display: none;
+    }
+}
+
+/* @media (min-width:992px) and (max-width:1250px) {
+    .sidebar::before {
+        height:270px;
+    }
+}
+@media (min-width:830px) and (max-width:992px) {
+    .sidebar::before {
+        height:220px;
+    }
+}
+@media (min-width:625px) and (max-width:768px) {
+    .sidebar::before {
+        height:215px;
+    }
+}
+@media (min-width:300px) and (max-width:360px) {
+    .sidebar::before {
+        height:330px;   
+    }
+}
+@media (min-width:360px) and (max-width:500px) {
+    .sidebar::before {
+        height:270px;  
+    }
+} */
+
+/* End resume  */
+
+/* start portfolio  */
+.portfolio {
+    padding: 50px 1p5x;
+    background-color: #f5f8fd;
+}
+
+.portfolio-media {
+    position: relative;
+}
+
+.portfolio-btn {
+    position: absolute;
+    bottom: 0px;
+    left: 14px;
+    background-color: var(--main-hover);
+    width: 91%;
+    opacity: 0;
+    transition: var(--main-trasition);
+}
+
+.portfolio-media:hover .portfolio-btn {
+    opacity: 1;
+}
+.portfolio a:hover {
+    color: var(--main-hover) !important;
+}
+/* End portfolio  */
+
+/* start services  */
+.services {
+    padding: 50px 15px;
+    background-color: #fff;
+}
+
+.services-media .fa-briefcase,
+.services-media .fa-code,
+.services-media .fa-binoculars,
+.services-media .fa-sun,
+.services-media .fa-clipboard-list,
+.services-media .fa-chart-simple {
+    background-color: var(--main-hover);
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+@media (max-width:768px) {
+    .services {
+        padding: 10px;
+    }
+
+    .services-media {
+        margin: 0 !important;
+    }
+}
+
+/* End services  */

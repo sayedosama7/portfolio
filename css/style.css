@@ -531,10 +531,16 @@ html {
     padding: 15px;
     border-radius: 50%;
 }
-.contact-info ,
-.contact-form
-{
+
+.contact-info,
+.contact-form {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    
 }
+
+@media (max-width:768px) {
+    .contact {
+        padding: 25px 15px;
+    }
+}
+
 /* End contact  */

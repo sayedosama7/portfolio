@@ -459,9 +459,11 @@ html {
 .portfolio-media:hover .portfolio-btn {
     opacity: 1;
 }
+
 .portfolio a:hover {
     color: var(--main-hover) !important;
 }
+
 /* End portfolio  */
 
 /* start services  */
@@ -494,3 +496,45 @@ html {
 }
 
 /* End services  */
+
+/* start testimonials  */
+.testimonials {
+    background-color: #f5f8fd;
+    padding: 50px 30px;
+}
+
+.testimonials .p-box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:768px) {
+    .testimonials {
+        padding: 25px 15px;
+    }
+}
+
+/* End testimonials  */
+
+/* start contact  */
+.contact {
+    padding: 50px 30px;
+    background-color: #fff;
+}
+
+.fa-location-dot,
+.fa-mobile-screen,
+.fa-envelope {
+    font-size: 20px;
+    background-color: #c2d6f1;
+    padding: 15px;
+    border-radius: 50%;
+}
+.contact-info ,
+.contact-form
+{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    
+}
+/* End contact  */
